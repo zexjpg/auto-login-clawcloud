@@ -16,7 +16,7 @@ def run_login():
         print("❌ 错误: 未设置账号密码环境变量。")
         return
 
-    print("🚀 [Step 1] 启动有头浏览器(虚拟屏幕)并访问 ClawCloud...")
+    print("🚀 [Step 1] 访问 ClawCloud...")
     with sync_playwright() as p:
         # 关闭无头模式，并额外传入禁用自动化特征的参数
         browser = p.chromium.launch(
